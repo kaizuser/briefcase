@@ -1,0 +1,211 @@
+* {
+	font-family: teko medium;
+	text-align:center;
+	margin:0;
+	padding:0
+} 
+
+section h1{
+	color:black;
+	font-size:30px;
+}
+
+section time{
+	color:black;
+	font-size:20px;
+}
+
+section p{
+	color:#c9c9c9;
+}
+
+article{
+	margin-bottom:50px;
+	width:650px;
+	margin-left:600px;
+}
+
+article img{
+	width:100%;
+	height:auto;
+}
+
+.body {
+	background-color:#48434d;
+	margin:0;
+}
+
+.body__navegator{
+	width:100%;
+	margin-left:300px;
+}
+
+.body__navegator--items{
+	height:100px;
+	width:1100px;
+	margin-left:120px;
+	margin-right:500px;
+	display:flex;
+	justify-content:center;
+	flex-direction:row;
+}
+
+
+.list{
+	margin:13px 100px 0px 0px;
+	list-style-type:none;
+	font-size:25px;
+	font-weight:bold;
+}
+
+#title{
+	position:absolute;
+        left:100px;
+ 	font-size:40px;
+	list-style-type:none;
+	margin-right:px;
+	transition: left .5s;
+}
+
+#icon{
+	position:absolute;
+	left:70px;
+	top:15px;
+	transition: left .5s, transform .9s ease;
+}
+
+#hr{
+	position:relative;
+	border: 1px solid #48434d;
+	width:1px;
+	left: 290px;
+	top: 45px;
+	transition: width .5s, border-color .5s;
+}
+
+#check:checked ~ .header img{
+	left:300px;
+	transform: rotate(360deg)
+}
+#check:checked ~ .header h1{
+	left:330px;
+}
+
+#check:checked ~ .header hr{
+	border: 1px solid black;
+	width:865px;
+}
+
+
+
+/*SIDEBAR------------*/
+
+.sidebar{
+	margin:0;
+	padding:0;
+	width:250px;
+	height:100%;
+	position:fixed;
+	left:-200px;
+	background-color:#c9c9c9;
+	transition: .5s all;
+}
+
+#sidebar__title{
+	font-size:40px;
+	margin-bottom:50px;
+	margin-top:20px;
+	width:60px;
+	margin-left:90px;
+	height:44px;
+	padding-bottom:4px;
+ 
+}
+.sidebar__items li{
+	position:relative;
+	display:block;
+	margin-bottom: 10px;
+	margin-top:0px;
+	font-size:20px;
+	transition: margin .5s;
+	min-height:40px;
+	line-height:40px;
+}
+.sidebar__items hr{
+	display:block;
+	border:1px solid black;
+	width:10px;
+	margin:0px 25px 0px 25px;
+	transition: .5s all;
+}
+
+.sidebar__items div{
+	margin:15px 18px 55px 10px;
+	transition: .2s;
+}
+
+#check{
+	display:none;
+}
+
+label #open, label #close {
+	position:fixed;
+	cursor:pointer;
+}
+
+label #open{
+	z-index:1111;
+	left:10px;
+	top:10px;
+	font-size:50px;
+	color:black;
+	transition: .5s;
+}
+
+
+#check:checked ~ .sidebar{
+	left:0px;
+}
+
+#check:checked ~ div hr {
+	width:170px;
+}
+
+#check:checked ~ .sidebar .sidebar__items .first ~ div:hover{
+	margin-top: 70px;
+        margin-bottom:70px;
+        pointer-events:auto;
+        color:white;
+	cursor:pointer;
+	background-color:#48434d;
+}
+
+#check:checked ~ .sidebar .sidebar__items .first:hover{
+	margin-top:30px;
+	margin-bottom:70px;
+	pointer-events:auto;
+	cursor:pointer;
+	background-color:#48434d;
+}
+
+#check:checked ~ label #open{
+	left:200px;
+}
+
+#sidebar__title:hover{
+	cursor:pointer;
+	color:white;
+	transition: color .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
